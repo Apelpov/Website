@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>행아웃 도시</title>
+    <style>
+      body,
+      html {
+        font-family: "Patrick Hand", sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        background-color: lightgreen;
+        width: 100%;
+        height: fit-content;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 10rem;
+      }
+
+      img {
+        margin-top: 2rem;
+        width: 100%;
+        display: block;
+        transition: all 0.6s;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+
+      #apel {
+        height: 20rem;
+        border-radius: 1rem;
+      }
+
+      #ville {
+        height: 20rem;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+      }
+
+      #button{
+        cursor: pointer;
+        width: 100%;
+        background-color: royalblue;
+        text-align: center;
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 1rem;
+        transition: all 0.4s;
+      }
+
+      #button:hover {
+        transform: translateY(-10px);
+      }
+
+      #Title{
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="Title" > Det är bra att vara här</h1>
+      <div onclick="rick()" id="button" role="button">Tryck på mig</div>
+      <img src="/img/animaple.gif" alt="Apel" id="apel" />
+      <img src="/img/VilleGrim.png" alt="VilleGrim" id="Ville" />
+
+      <iframe
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/W8CQLEOedNQ"
+      >
+      </iframe>
+
+
+      <footer>
+        Site by Apel  ©Apel 2022
+      </footer>
+    </div>
+
+    <script>
+      function rick() {
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+      }
+    </script>
+  </body>
+</html>
